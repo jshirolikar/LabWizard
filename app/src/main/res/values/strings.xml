@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lab Trotter</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_thermocouple_coeffs">Thermocouple Coefficients</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="thermocouple_coeffs_prompt">Choose thermocouple coefficient type</string>
+    <string name="title_activity_atomic_weights">Atomic Weights</string>
+    <string name="atomic_weights_prompt">Select Element</string>
+    <string name="title_activity_ionization_energy">Ionization Energies</string>
+    <string name="title_activity_constants_button">Constants</string>
+    <string name="title_activity_constants">Constants</string>
+    <string name="physical_constants_prompt">Physical constants</string>
+    <string name="title_activity_cccbd">CCCBD</string>
+    <string name="title_activity_thermocouple_voltages">ThermocoupleVoltagesActivity</string>
+</resources>

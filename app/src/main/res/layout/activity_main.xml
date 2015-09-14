@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:clickable="false"
+    android:longClickable="false"
+    android:theme="@style/AppTheme">
+
+    <Button style = "style/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIST ITS-90 Thermocouple Coefficients (NIST SRD 60)"
+        android:id="@+id/thermocouple_coeffs_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:theme="@android:style/Widget.Material.Button.Borderless"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atomic Weights and Isotopic Compositions (NIST SRD 144)"
+        android:id="@+id/atomic_weights_button"
+        android:theme="@android:style/Widget.Material.Button.Borderless"
+        android:layout_below="@+id/constants_button"
+        android:layout_alignStart="@+id/thermocouple_coeffs_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ground Levels and Ionization Energies for the Neutral Atoms (NIST SRD 111)"
+        android:id="@+id/ionization_energies_button"
+        android:layout_below="@+id/thermocouple_voltages_button"
+        android:layout_alignLeft="@+id/thermocouple_coeffs_button"
+        android:layout_alignStart="@+id/thermocouple_coeffs_button"
+        android:layout_alignEnd="@+id/atomic_weights_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CODATA Fundamental Physical Constants (NIST SRD 121)"
+        android:id="@+id/constants_button"
+        android:textStyle="normal"
+        android:layout_below="@+id/CCCBD_button"
+        android:layout_alignStart="@+id/CCCBD_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIST Computational Chemistry Comparison and Benchmark Database (CCCBDB, NIST SRD 101)"
+        android:id="@+id/CCCBD_button"
+        android:layout_below="@+id/ionization_energies_button"
+        android:layout_alignLeft="@+id/ionization_energies_button"
+        android:layout_alignStart="@+id/ionization_energies_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIST ITS-90 Thermoelectric voltages (NIST SRD 60)"
+        android:id="@+id/thermocouple_voltages_button"
+        android:layout_below="@+id/thermocouple_coeffs_button"
+        android:layout_alignLeft="@+id/constants_button"
+        android:layout_alignStart="@+id/constants_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELP"
+        android:id="@+id/help_button"
+        android:layout_below="@+id/atomic_weights_button"
+        android:layout_alignLeft="@+id/constants_button"
+        android:layout_alignStart="@+id/constants_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

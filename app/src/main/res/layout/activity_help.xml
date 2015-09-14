@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ColorBackground">
+
+    <TextView
+        android:background="@drawable/back"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n\nLab Wizard is a mobile app designed for Android OS.  It uses data provided by the National Institute of Standards and Technology (NIST) but is not endorsed or certified by NIST. The app was tested on a Samsung Galaxy S5 smartphone.
+
+\n\nIn order to use it, download the app and click on the Lab Wizard icon.  After the initial welcome screen, an index is available with 7 options.
+
+\n1)NIST ITS-90 thermocouple coefficients (NIST SRD 60)
+\n2)NIST ITS-90 thermoelectric voltages (NIST SRD 60)
+\n3)Ground levels and ionization energies for the neutral atoms (NIST SRD111)
+\n4)NIST computational chemistry comparison and benchmark database (CCCBDB, NIST SRD 101)
+\n5)Codata fundamental physical constants (NIST SRD 121)
+\n6)Atomic weights and isotropic compositions (NIST SRD 144)
+\n7)Help
+
+\n\nClick on any of the 7 buttons to proceed. Once a menu item is selected, a new screen opens where the user can select an item (user inputs are marked with a red oval border). In case of several input items select items in the following order 1) left 2) right 3) bottom.  The output (marked as a green box) gets updated with new results.
+
+\n\nFor eg.Thermoelectric Voltages, pick Temperature, minus, Type of the thermocouple in that order. Results are updated as soon as the Type changes. The results box is scrollable in case data does not fit on one screen.
+
+\n\nSept 12, 2015."
+
+        android:elegantTextHeight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop = "20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/textView1"
+        android:singleLine="false"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:fadeScrollbars="false" />
+
+</RelativeLayout>

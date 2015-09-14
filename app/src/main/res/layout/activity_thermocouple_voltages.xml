@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.jshir_000.nistbuddy.ThermocoupleVoltagesActivity">
+
+    <TextView android:text="Temperature (deg C)" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <TextView
+        android:background="@drawable/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:enabled="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:fadeScrollbars="false"
+        android:layout_below="@+id/numberPicker4"
+        android:layout_toEndOf="@+id/numberPicker2" />
+
+
+    <Spinner
+        android:background="@drawable/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:spinnerMode="dropdown"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:fadeScrollbars="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/numberPicker"
+        android:layout_toStartOf="@+id/numberPicker3" />
+
+
+    <NumberPicker
+        android:background="@drawable/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:id="@+id/numberPicker"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp" />
+
+    <NumberPicker
+        android:background="@drawable/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:id="@+id/numberPicker2"
+        android:layout_alignTop="@id/numberPicker"
+        android:layout_toEndOf="@+id/numberPicker" />
+
+    <NumberPicker
+        android:background="@drawable/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker3"
+        android:layout_alignTop="@+id/numberPicker2"
+        android:layout_toEndOf="@+id/numberPicker2" />
+
+
+    <NumberPicker
+        android:background="@drawable/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:id="@+id/numberPicker4"
+        android:layout_alignTop="@+id/numberPicker3"
+        android:layout_toEndOf="@+id/numberPicker3" />
+
+    <CheckBox
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="minus"
+        android:id="@+id/checkbox"
+        android:checked="false"
+        android:layout_alignTop="@+id/numberPicker4"
+        android:layout_toEndOf="@+id/numberPicker4" />
+
+
+
+</RelativeLayout>
